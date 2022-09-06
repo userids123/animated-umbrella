@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+<style>
+    .heading{
+    width:100%;
+    text-align:left;
+    background-color:white;
+
+}
+body{
+    background-image: url("bg.png");
+}
+.heading h3{
+    display:inline;
+}
+.heading button{
+    float:right;
+    border:1px solid white;
+}
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
+
+.big_image{
+    width:100%;
+
+}
+#start, #status{
+    font-size:25px;
+
+}
+.modal-dialog{
+    width:90%;
+
+}
+h4{
+    background-color:white;
+    width:30%;
+    height:30%;
+    border-radius:5px;
+
+}
+.instrunction_image{
+display:inline-block;
+width:45%;
+}
+</style>
+  <title>p5.play.Mario</title>
+  <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+ 
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body>
+  <center>
+    <div class="btn btn-btn primary  heading">
+      <h3>AI PING PONG GAME</h3>
+      <button class="btn btn-primary " data-toggle="modal" data-target="#my_modal">Instructions</button>
+    </div>
+   
+
+    <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
+    <br><br>
+    <h3 id="status" class="btn btn-default"></h3>
+    <br><br>
+    <div id="canvas"></div>
+    <br><br>
+    <button onclick="restart()" class="btn btn-danger" id="restart">Restart</button>
+    <br><br>
+    <a href="https://github.com/kewaldshah"><h4>Source code:|Game Credit: Ping Pong|</h4></a>
+   <div id="myModal" class="modal fade ">
+              <div class="modal-dialog" >
+                <!-- Modal content-->
+                <div class="modal-content">
+            
+                  <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h3>Instructions</h#>
+                  </div>
+            
+                   <div class="modal-body">
+                       <ol>
+                           <li>First keep your laptop screen straight</li>
+                           <li>Move yourself approximately 3-4 feet away from the laptop</li>
+                           <li>Move your nose in an ascending and decending manner, a red dot should appear on your nose</li>
+                           <li>Now press the play button, and again move yourself 3-4 feet away from laptop</li>
+                           <li>The red paddel is your paddel, that will move as per the movement of your nose</li>
+                       </ol>
+                    </div>
+      
+                </div>
+              </div>
+            </div>
+    
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
